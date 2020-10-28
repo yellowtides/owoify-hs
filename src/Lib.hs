@@ -14,8 +14,8 @@ owoifyChar c
 
 -- inserts a 'y' between ['n'/'N'/'m'/'M'] and 'o'
 insertYAll :: String -> String
-insertYAll s = (concat . map fst) [uncurry insertY pair | pair <- zip s (drop 1 s)] ++ [last s]
-          where
+insertYAll s = concat [uncurry insertY pair | pair <- zip s (drop 1 s)] ++ [last s]
+             where
                 insertY x y
-                    | x `elem` "nNmM" && y `elem` "oO" = (x : "y", y)
-                    | otherwise                        = ([x], y)
+                    | x `elem` "nNmM" && y `elem` "oO" = x : "y"
+                    | otherwise                        = [x]
