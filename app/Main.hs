@@ -4,7 +4,7 @@ import Lib
 
 main :: IO ()
 main = do
-        putStrLn "pwease input yow stwinyoong"
+        putStrLn "pwease input youw stwing owo"
         str <- getLine
-        putStrLn $ "hewe you go >>= " ++ (show . owoify) str
+        putStrLn $ "hewe you go: " ++ (show . owoify) str
 
