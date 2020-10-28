@@ -2,7 +2,7 @@
 A simple string owoifier written in Haskell.
 
 ## Installation/Usage
-Use `stack` (`build && exec` or `run`). I.e., in the root folder run
+Use `stack` (`stack build && stack exec` or `stack run`). I.e., in the root folder run
 ```bash
 stack run
 ```
