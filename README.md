@@ -9,4 +9,4 @@ stack run
 and input your desired string to be owoified.
 
 ## Dependencies
-*haskell-stack
+* haskell-stack
