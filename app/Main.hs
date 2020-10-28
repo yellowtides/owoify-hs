@@ -4,8 +4,9 @@ import Lib
 
 main :: IO ()
 main = do
-        putStrLn "[pwease input youw stwing owo]"
-        str <- getLine
-        putStrLn $ "[hewe you go]" 
-        putStrLn $ (show . owoify) str
+          putStrLn "[pwease input youw fiwe owo]"
+          file <- getLine        
+          str <- readFile file
+          putStrLn $ "[hewe you go]" 
+          putStrLn $ (show . owoify) str
 
