@@ -2,11 +2,15 @@
 A simple string owoifier written in Haskell.
 
 ## Installation/Usage
-Use `stack` (`stack build && stack exec` or `stack run`). I.e., in the root folder run
+In the root folder, run
 ```bash
-stack run
+λ ./owoify.sh [FILENAME]
 ```
-and input your desired string to be owoified.
+and input your desired unicode file to be owoified. The owoified result will then be stored in `owoified.txt`. 
+
+The files `beemovie.txt` and the corresponding `owoified.txt` are left as examples.
 
 ## Dependencies
 * haskell-stack
+* bash
+* tail
