@@ -4,4 +4,4 @@
 stack build
 
 # take the provided file argument, pipe it to stack
-echo $1 | stack exec owoify-hs-exe | tail -n +3 >owoified.txt
+stack exec owoify-hs-exe <$1 >owoified.txt
